@@ -7,11 +7,11 @@ part 'bottom_navigation_state.dart';
 class BottomNavigationBloc
     extends Bloc<BottomNavigationEvent, BottomNavigationState> {
   BottomNavigationBloc() : super(HomeState());
-
   // BottomNavigationBloc() : super(BottomNavigationInitial()) {
   // on<BottomNavigationEvent>((event, emit) {});
   // }
 
+  @override
   Stream<BottomNavigationState> mapEventToState(
     BottomNavigationEvent event,
   ) async* {

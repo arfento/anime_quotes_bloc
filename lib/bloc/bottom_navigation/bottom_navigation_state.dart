@@ -16,11 +16,13 @@ class HomeState extends BottomNavigationState {
 }
 
 class FavoriteState extends BottomNavigationState {
-  final int index = 1;
-  final String title = 'Favorite';
+  int index = 1;
+  String title = 'Favorite';
 
   @override
   List<Object> get props => [index, title];
+
+  //  FavoriteState({required this.index, required this.title});
 }
 
 class BottomNavigationInitial extends BottomNavigationState {}
